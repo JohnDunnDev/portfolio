@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet"> 
+    <script src="script.js"></script>
+    <title>John Dunn</title>
+</head>
+<body>
+    <header>
+        <div class="container row">
+          <input type="checkbox" id="navToggle" name="navToggle" class="nav__input">
+          <label for="navToggle" class="nav-toggle" aria-label="open navigation">
+            <span class="hamburger"></span>
+          </label>
+          <a href="#hero" class="logo nav__home nav__link--active">JD</a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#projects" class="nav__link nav__projects">PROJECTS</a></li>
+              <li class="nav__item"><a href="#about-me" class="nav__link nav__about-me">ABOUT ME</a></li>
+              <li class="nav__item"><a href="#contact-me" class="nav__link nav__contact-me">CONTACT ME</a></li>
+            </ul>
+          </nav>
+        </div>
+      
+      </header>
+      <main>
+        <section class="container hero" id="hero">
+          <h1 class="hero__heading">
+            <span class="heading-hover">H</span><span class="heading-hover">i</span><span class="heading-hover">,</span> <span class="heading-hover">I</span><span class="heading-hover">'</span><span class="heading-hover">m</span> <span class="heading-hover">J</span><span class="heading-hover"></span><span class="heading-hover">o</span><span class="heading-hover">h</span><span class="heading-hover">n</span><span class="heading-hover">.</span><span class="heading--max-size"></span>
+          </h1>
+          <h2><span class="typewriter-text">WEB DEVELOPER 💻</span><span class="text-cursor" aria-role="presentation">|</span></h2>
+          <div class="hero__scroll-down container">
+            <p>Scroll down</p>
+            <div class="hero__arrow-container">
+              <div class="hero__arrow" aria-role="presentation">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container projects" id="projects">
+          <h2 class="projects__heading"><span class="heading-hover">P</span><span class="heading-hover">R</span><span class="heading-hover">O</span><span class="heading-hover">J</span><span class="heading-hover">E</span><span class="heading-hover">C</span><span class="heading-hover">T</span><span class="heading-hover">S</span></h2>
+          <p>Below are the projects that made it, the ones that lived. To all of my future projects, may the odds be ever in your favour.</p>
+          <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li class="carousel__slide" id="carousel__slide1" tabindex="0">
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide2"></a>
+                  <a href="#carousel__slide2"></a>
+                </div>
+                <h3><span class="heading-hover">S</span><span class="heading-hover">E</span><span class="heading-hover">C</span><span class="heading-hover">R</span><span class="heading-hover">E</span><span class="heading-hover">T</span><span class="heading-hover">'</span><span class="heading-hover">S</span> <span class="heading-hover">S</span><span class="heading-hover">A</span><span class="heading-hover">F</span><span class="heading-hover">E</span></h3>
+                <img src="/img/secretsSafe-screenshot.png" alt="The Secret's Safe application." loading=lazy>
+                <p>A web app to send secret information like passwords or API keys.</p>
+                <button><a href="./projects/secrets-safe.html">VIEW PROJECT</a></button>
+              </li>
+              <li class="carousel__slide" id="carousel__slide2" tabindex="0">
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide1"></a>
+                  <a href="#carousel__slide1"></a>
+                </div>
+                <h3><span class="heading-hover">T</span><span class="heading-hover">H</span><span class="heading-hover">R</span><span class="heading-hover">E</span><span class="heading-hover">E</span><span class="heading-hover">C</span><span class="heading-hover">A</span><span class="heading-hover">S</span><span class="heading-hover">T</span></h3>
+                <img src="/img/threecast-screenshot.png" alt="The Threecast application." loading=lazy>
+                <p>A 3 day weather forecast app (get it?) that gets weather for user input.</p>
+                <button><a href="/projects/threecast.html">VIEW PROJECT</a></button>
+              </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button">Go to project 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button">Go to project 2</a>
+              </li>
+            </ol>
+          </aside>
+          </section>
+        </section>
+        <section class="container about-me" id="about-me">
+          <h2 class="about-me__heading"><span class="heading-hover">A</span><span class="heading-hover">B</span><span class="heading-hover">O</span><span class="heading-hover">U</span><span class="heading-hover">T</span> <span class="heading-hover">M</span><span class="heading-hover">E</span></h2>
+          <p class="about-me__p start">
+            I'm a <span class="about-me__age">30</span> year old self-taught full-stack developer from South Yorkshire. <br /><br />
+            I've wondered how software was made for as long as I can remember, whenever I used a computer or played a video game as a kid I always wondered what was going on under the hood but I thought software development was for geniuses and I felt I didn't fit the bill.
+            <br /><br />
+            In school we had one lesson where we were taught about HTML, we created a "Hello world" page with some inline styling, and I played around with styling MySpace in my rebellious teenage years. Fast forward a decade and I got fed up of working jobs I wasn't invested in so I started learning something I've always been fascinated by. Nowadays, I like building cool things and learning how to build cooler things.
+            <br /><br />
+            When I'm not designing or writing code for my next project I like to play video games, play guitar, and spend time with my fiance, kids and dogs.
+          </p>
+        </section>
+        <section class="container contact-me" id="contact-me">
+          <h2 class="contact-me__heading"><span class="heading-hover">C</span><span class="heading-hover">O</span><span class="heading-hover">N</span><span class="heading-hover">T</span><span class="heading-hover">A</span><span class="heading-hover">C</span><span class="heading-hover">T</span> <span class="heading-hover">M</span><span class="heading-hover">E</span></h2>
+          <p>
+            Well, that's everything I've got for you, thanks for checking out my
+            portfolio. If you would like to get in touch please use the below form
+            or contact me on one of the socials. Peace <span aria-role="presentation" aria-label="VICTORY HAND">✌️</span>
+          </p>
+          <form action="" class="form">
+            <div class="form__section">
+              <label for="form-name">YOUR NAME:</label>
+              <input type="text" id="form-name" name="form-name" placeholder="Your name" autocomplete="name" required />
+            </div>
+      
+            <div class="form__section">
+              <label for="form-email">EMAIL ADDRESS:</label>
+              <input type="email" id="form-email" name="form-email" placeholder="email@example.com" autocomplete="email" required />
+            </div>
+      
+            <div class="form__section">
+              <label for="form-subject">SUBJECT:</label>
+              <input type="text" id="form-subject" name="form-subject" placeholder="The subject" autocomplete="off" required />
+            </div>
+      
+            <div class="form__section">
+              <label for="form-message">MESSAGE:</label>
+              <textarea id="form-message" name="form-message" placeholder="Your message" autocomplete="off" required></textarea>
+            </div>
+            <button>SUBMIT</button>
+        </section>
+      </main>
+      <footer class="text-container">
+        <a href="https://twitter.com/JohnDunnDev" rel="noreferrer noopener" class="footer__social-links"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+        <a href="https://www.linkedin.com/in/john-%F0%9F%92%BB-dunn-7b8a86208/" rel="noreferrer noopener" class="footer__social-links"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+      </footer>
+</body>
+</html>
