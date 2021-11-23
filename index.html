@@ -103,27 +103,30 @@
             portfolio. If you would like to get in touch please use the below form
             or contact me on one of the socials. Peace <span aria-role="presentation" aria-label="VICTORY HAND">✌️</span>
           </p>
-          <form class="form" name="contact" method="POST" data-netlify="true">
-            <div class="form__section">
-              <label for="form-name">YOUR NAME:</label>
+          <form class="form" name="contact" method="POST" action="/pages/form-success" data-netlify="true">
+            <p class="form__section">
+              <label for="name">YOUR NAME:</label>
               <input type="text" id="form-name" name="name" placeholder="Your name" autocomplete="name" required />
-            </div>
+            </p>
       
-            <div class="form__section">
-              <label for="form-email">EMAIL ADDRESS:</label>
+            <p class="form__section">
+              <label for="email">EMAIL ADDRESS:</label>
               <input type="email" id="form-email" name="email" placeholder="email@example.com" autocomplete="email" required />
-            </div>
+            </p>
       
-            <div class="form__section">
-              <label for="form-subject">SUBJECT:</label>
+            <p class="form__section">
+              <label for="subject">SUBJECT:</label>
               <input type="text" id="form-subject" name="subject" placeholder="The subject" autocomplete="off" required />
-            </div>
+            </p>
       
-            <div class="form__section">
-              <label for="form-message">MESSAGE:</label>
+            <p class="form__section">
+              <label for="message">MESSAGE:</label>
               <textarea id="form-message" name="message" placeholder="Your message" autocomplete="off" required></textarea>
-            </div>
-            <button>SUBMIT</button>
+            </p>
+            <p class="form__section">
+              <button type="submit">SUBMIT</button>
+            </p>
+          </form>
         </section>
       </main>
       <footer class="text-container">

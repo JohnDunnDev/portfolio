@@ -326,6 +326,7 @@
       scroll-snap-align: center;
     }
   }
+
   .carousel__viewport {
     scrollbar-color: transparent transparent; /* thumb and track */
   }
@@ -532,10 +533,10 @@
   }
   
   button {
-    background-color: var(--clr-accent);
-    border: none;
+    background-color: var(--clr-dark);
+    border: 2px solid var(--clr-accent);
     border-radius: 4px;
-    color: var(--clr-dark);
+    color: var(--clr-accent);
     cursor: pointer;
     display: inline-block;
     font-family: var(--font);
@@ -544,24 +545,24 @@
     margin: 2em 0;
     max-width: 15rem;
     padding: 0.9em 1.5em;
+    position: relative;
     text-transform: uppercase;
   }
   
-  button span {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    width: 100%;
-  }
-  
   button a {
-    color: var(--clr-dark);
+    color: var(--clr-accent);
     text-decoration: none;
   }
-  
+
   button:hover,
   button:focus {
-    opacity: 0.8;
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
+  }
+
+  button:hover a,
+  button:focus a {
+    color: var(--clr-dark);
   }
 
   button + button {
@@ -592,6 +593,35 @@
     max-width: 1200px;
     position: relative;
     width: 90%;
+  }
+
+  /* Form success page */
+
+  .tick {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 5rem;
+    position: relative;
+    width: 5rem;
+  }
+
+  .tick::before,
+  .tick::after {
+    background: white;
+    content: "";
+    height: 1rem;
+    left: 35%;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+    width: 0.25rem;
+  }
+
+  .tick::after {
+    height: 2rem;
+    left: 55%;
+    top: 30%;
+    transform: rotate(45deg);
   }
   
   @media only screen and (min-width: 700px) {
